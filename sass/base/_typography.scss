@@ -1,0 +1,101 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: $default-font-size;
+    font-weight: 400;
+    color: $color-gray;
+    line-height: 1.7;
+}
+
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &--main{
+        display: block;
+        font-weight: 700;
+        font-size: 2rem;
+        animation: moveInLeft 1s ease-out;
+    }
+    &--sub{
+        display: block;
+        font-weight: 400;
+        font-size: 6rem;
+        animation: moveInRight 1s ease-out;
+        @include respond(phone){
+            font-size: 8rem;
+        }
+    }
+}
+
+.heading-secondary{
+    color: $color-white;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    @include respond(phone){
+        font-size: 2rem;
+    }    
+}
+
+.heading-tertiary{
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-primary;
+}
+
+.number-card{
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $color-black;
+
+    @include respond(phone){
+        font-size: 2.5rem;
+    }
+    
+}
+.number-detail{
+    color: $color-gray-dark;
+}
+
+.text{
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    @include clearfix;
+
+    @include respond(tab_port){
+        padding: 1.5rem 0;
+    }
+
+    &--menu{
+        float: right;
+        margin-right: 3rem;
+        color: $color-primary-light;
+    }
+}
+.text-detail{
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    @include clearfix;
+
+    @include respond(tab_port){
+        padding: 1.5rem 0;
+    }
+
+}
+
+.footer--text{
+    font-size: $default-font-size;
+    font-weight: 700;
+    color: $color-white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    @include respond(tab_port){
+        font-size: 1.4rem;
+    } 
+}

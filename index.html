@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Free Our People</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__text-box">
+            <h1 class="heading-primary u-text-center">
+                <span class="heading-primary--main">
+                    realease our people
+                </span>
+                <span class="heading-primary--sub">
+                    Now!
+                </span>
+            </h1>
+        </div>
+    </header>
+    <main>
+        <section class="section-card">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="section-card__box u-text-center">
+                        <h3 class="heading-tertiary">
+                            All
+                        </h3>
+                        <p class="number-card">
+                            0000
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="section-card__box u-text-center">
+                        <h3 class="heading-tertiary">
+                            Detained
+                        </h3>
+                        <p class="number-card">
+                            0000
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="section-card__box u-text-center">
+                        <h3 class="heading-tertiary">
+                            Released
+                        </h3>
+                        <p class="number-card">
+                            0000
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-card__list">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="section-card__list--menu">
+                            <p class="u-ml-small text">
+                                Technology University
+                                <span class="text--menu">&raquo;&raquo;</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="section-card__list--menu">
+                            <p class="u-ml-small text">
+                                University of Economics
+                                <span class="text--menu">&raquo;&raquo;</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="section-card__list--menu">
+                            <p class="u-ml-small text">
+                                Computer University
+                                <span class="text--menu">&raquo;&raquo;</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="section-card__list--menu">
+                            <p class="u-ml-small text">
+                                University of Medicine
+                                <span class="text--menu">&raquo;&raquo;</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer--text u-text-center">
+            Release Our Leaders and People NOW! <br>
+            We strongly condem Military Coup. <br>
+            <!-- <a href="detail.html" style="color:aliceblue;">Detail</a> -->
+        </p>
+
+    </footer>
+
+    <script>
+
+        button1 = document.querySelectorAll('.section-card__box')
+        button2 = document.querySelectorAll('.section-card__list--menu')
+
+
+        for(let i=0; i < button1.length; i++){
+            button1[i].addEventListener('click', function(e){
+                window.location.assign('detail.html');
+            });
+        }
+        for(let i=0; i < button2.length; i++){
+            button2[i].addEventListener('click', function(e){
+                window.location.assign('detail.html');
+            });
+        }
+
+        
+
+    </script>
+</body>
+
+</html>
+
+<!-- <section class="section-grid">
+    <div class="row">
+        <div class="col-1-of-2">
+            col 1 of 2
+        </div>
+        <div class="col-1-of-2">
+            col 1 of 2
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1-of-3">
+            col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+            col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+            col 1 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1-of-3">
+            col 1 of 3
+        </div>
+        <div class="col-2-of-3">
+            col 2 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-2-of-4">
+            col 2 of 4
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1-of-4">
+            col 1 of 4
+        </div>
+        <div class="col-3-of-4">
+            col 3 of 4
+        </div>
+    </div>
+</section> -->

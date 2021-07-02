@@ -1,0 +1,51 @@
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include clearfix;
+
+    &--text{
+        color: rgba($color-white, .8);
+        background-color: rgba($color-white, .2);
+        backdrop-filter: blur(.5rem);
+        border-radius: 5px;
+        padding: 1.5rem 2.5rem;
+        border-top: .5px solid rgba($color-white, .4);
+        border-left: .5px solid rgba($color-white, .4);
+        box-shadow: 0 1rem 1rem rgba($color-black, .2);
+        float: left;
+        transition: all .5s;
+
+        @include respond(phone){
+            padding: .5rem 1rem;
+        }
+
+        &:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 2rem 2rem rgba($color-black, .1);
+        }
+        &:active{
+            transform: translate(-1px);
+            box-shadow: 0 1rem 1rem rgba($color-black, .2);
+        }
+    }
+
+    &--released,
+    &--detained{
+        font-size: 1rem;
+        color: $color-white;
+        padding: .5rem 1rem;
+        margin-top: .3rem;
+        margin-right: 2.5rem;
+        border-radius: 5rem;
+        letter-spacing: .5px;
+        float: right;
+    }
+    &--released{
+        background-color: rgba($color-gray, .8);
+    }
+    &--detained{
+        background-color: rgba($color-primary-light, .8);
+    }
+}
