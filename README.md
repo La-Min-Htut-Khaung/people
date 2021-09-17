@@ -1,3 +1,5 @@
 # release_our_people
-Release Our People Webpage
----> DoL <--- This is designed and developed by Dreams of Life Team. The project is designed with HTML, CSS and JavaScript.
+ The project is designed with HTML, CSS and JavaScript.
+ My Own Idea and Creation.
+ The project link is:
+ https://la-min-htut-khaung.github.io/release_our_people/
